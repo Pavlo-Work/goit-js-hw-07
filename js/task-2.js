@@ -30,7 +30,6 @@ const images = [
 const list = document.querySelector('.gallery');
 const imagesList = images.map((image) => {
     return `<li class="gallery-item"><img class="gallery-image" src=${image.url} alt="${image.alt}" width="210" height="125"></li>`;
-  });
-console.log(imagesList);
+  }).join('');
 list.innerHTML = imagesList;
 
